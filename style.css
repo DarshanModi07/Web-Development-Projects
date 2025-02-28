@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image:url("Assets/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 76vh;
+    object-fit:contain;
+}
+.box{
+    width: 100%;
+    height: 76vh;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0px;
+    color: white;
+}
+nav{
+    display: flex;
+    max-width: 66vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 17px; 
+}
+nav img{
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    justify-content: center;
+    height: calc(100% - 152px);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-family: "Baloo Bhai 2", serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+    padding: 30px;
+    gap: 20px;
+    text-align: center;
+}
+.fc{
+    font-family: "poppins";
+    font-size: 48px;
+    font-weight: 600;
+}
+.sc{
+    font-size: 24px;
+    font-weight: 400;
+}
+.tc{
+    font-size: 24px;
+    font-weight: 400 ;
+}
+.btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-red-sn{
+    background-color: red;
+    color: white;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 13px 28px;
+    font-size: 28px;
+}
+.lang{
+    border: white;
+    background-color: rgb(42, 42, 42);
+    opacity: 0.7;
+    color: white;
+}
+ input{
+    font-size: 18px;
+    padding: 15px 48px;
+    margin-right: 10px;
+    color: white;
+    background-color:rgb(42, 42, 42);
+    opacity: 0.7;
+    border: 2px solid rgba(246,238,238,0.5);
+    border-radius: 5px;
+    padding-left: 8px;
+}
+.buttonn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.bttt{
+    .buttonn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9px;
+    }
+}
+.sep{
+    height: 7px;
+    background-color: rgb(87, 86, 86);
+}
+.first{
+    color: white;
+    display:flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Baloo Bhai 2", serif;
+}
+
+@media screen and (max-width:1300px) {
+    body{
+        background-color: red;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+.fl{
+    font-size: 56px;
+    font-weight: bolder;
+}
+.secimg{
+    position: relative;
+}
+.secimg img{
+    width: 992px;
+} 
+.second img{
+    width: 600px;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.vdo{
+    position: absolute;
+    top: 65px;
+    right: 200px;
+    z-index: -1;
+}
+.third img{
+    /* position: absolute;
+    z-index: 10; */
+}
+.faq{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+h2{
+    display: flex;
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Baloo Bhai 2", serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.faqbox{
+    background-color: rgb(59, 59, 59);
+    padding: 30px;
+    display: flex;
+    font-size: 30px;
+    font-family: "Baloo Bhai 2", serif;
+    align-items: center;
+    margin: 10px 160px;
+    justify-content: space-between;
+}
+.faqbox:hover{
+    cursor: pointer;
+    background-color: rgb(97, 96, 96);
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 60vw;
+    margin: auto;
+    color: white;
+}
+.footer_item{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    margin-top: 30px;
+}
+footer span{
+    /* margin-left:19vw;
+    margin-top: 1000px; */
+    font-size: 29px;
+    font-family: "Baloo Bhai 2", serif;
+}
+a:link{
+    color: white;
+    font-family: "Baloo Bhai 2", serif;
+    font-size: 20px;
+}
+.op{
+    margin-left: 36vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.ready{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: "Baloo Bhai 2", serif;
+    font-size: 30px;
+}
+
+
