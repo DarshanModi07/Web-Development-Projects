@@ -1,0 +1,229 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Baloo Bhai 2";
+}
+body{
+    background-color: #D6efff;
+}
+a{
+    text-decoration: none;
+}
+.nav{
+    height: 12px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #262424;
+    display: flex;
+    z-index: 1;
+}
+.item{
+    color: #D6efff;
+    font-size: 5.5px;
+    position: relative;
+    font-family: "Baloo Bhai 2", sans-serif;
+} 
+.AppName{
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.welcome{
+    font-size: 10px;
+    font-weight: 550;
+    position: relative;
+    z-index: -1;
+}
+.getallupdates{
+    font-size: 7px;
+    position: relative;
+    z-index: -1;
+}
+.type{
+    color: #262424;
+    position: relative;
+    top: 42px;
+    font-size: 7px;
+    left: 64px;
+}
+.typewriter{
+    color: #262424;
+    position: relative;
+    top: 42px;
+    font-size: 7px;
+    left: 70px;
+    margin-left: -4;
+}
+.typed-cursor {
+    font-size: 16px;  /* Adjust to make it smaller */
+    color: #555;
+    height: 4px;      /* Optional: change cursor color */
+    position: relative;
+    top: 42px;
+    left: 69px;
+  }
+.navbar{
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-top: 3px;
+    position: relative;
+    z-index: 1;
+}
+.home{
+    margin-left: 120px;
+    color: #D6efff;
+}
+.navbar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 0.4px;
+    top: 6.5px;
+    background-color: #262424; 
+    transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.navbar:hover{
+    margin-top: 2.7px;
+    transition: width 0.2s ease-in, background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+.navbar:hover::after {
+    width: 100%;
+    background-color: #D6efff; 
+}
+.Line{
+    color: #262424;
+    font-size: 10px;
+    margin-left: 14px;
+    margin-top: 12px;
+    margin-right: 80px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+.video{
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+.img{
+    display: inline-block;
+    height: 100px;
+    position:absolute;
+    top:7px;
+    right: 0px;
+    box-shadow: 10px solid black;
+    z-index: -1;
+}
+.sidebar{
+    background-color:#262424;
+    height: 100vh;
+    width: 50px;
+    color: #D6efff;
+    padding:2px;
+    font-size: 5px;
+    position: fixed;
+    left: 0px;
+    top: 12px;
+
+}
+.si{
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    
+}
+.si:hover{
+    background-color: #4d4b4b;
+    /* transform: translateX(7px); */
+    padding-left: 6px ;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.vac{
+    width: 57vw;
+    height: auto;
+    border: 0.5px solid #262424;
+    position: relative;
+    top: 95px;
+    left: 60px;
+    background-color: #D6efff;
+    /* box-shadow: 1px 3px 5px #4d6e84; */
+    border-radius: 5px;
+    z-index: -1;
+    padding-bottom: 3px;
+}
+.title{
+    font-size: 13px;
+    margin-left: 5px
+}
+.main{
+    width: 49vw;
+    height: auto;
+    border: 0.5px solid #262424;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    /* box-shadow: 1px 3px 5px #4d6e84; */
+    /* border-radius: 5px; */
+    padding: 5px;
+    padding-top: 2px;
+    /* overflow: auto; */
+}
+.lay{
+    margin-top: 7px;
+}
+.vt1{
+    font-size: 8px;
+}
+.vm1{
+    font-size: 5px;
+}
+.setpng{
+    height: 6px; 
+    width:6px; 
+    position:relative;
+    top:1.4px; 
+    left:-1px;
+    margin-right: 1.5px;
+
+}
+.ongoingpng{
+    height: 6px; 
+    width:6px; 
+    position:relative;
+    top:1.4px; 
+    left:-1px;
+}
+.notipng{
+    height: 6px; 
+    width:6px; 
+    position:relative;
+    top:1.4px; 
+    left:-1px;
+    margin-right: 1.5px;
+}
+.profilepng{
+    height: 7px; 
+    width:7px; 
+    position:relative;
+    top:1.4px; 
+    left:-1px;
+    margin-right: 1.5px;
+}
+.homepng{
+    height: 7px; 
+    width:7px; 
+    position:relative;
+    top:0px; 
+    
+    margin-right: 1.5px;
+
+}
+.si{
+    color: #D6efff;
+}
+
+

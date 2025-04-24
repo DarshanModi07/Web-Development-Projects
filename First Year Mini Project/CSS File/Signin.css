@@ -1,0 +1,174 @@
+*{
+    font-family: "Baloo Bhai 2", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #addbf7;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: 
+      linear-gradient(45deg, #D6efff 25%, transparent 25%),
+      linear-gradient(-45deg, #D6efff 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #262424 75%),
+      linear-gradient(-45deg, transparent 75%, #262424 75%);
+    background-size: 80px 80px;
+    background-position: 0 0, 0 40px, 40px -40px, -40px 0px;
+    animation: moveBackground 7s linear infinite;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  
+  /* Animation */
+  @keyframes moveBackground {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-80px, -80px);
+    }
+  }
+  
+.webname{
+    font-size: 14px;
+    margin-left: 34vw;
+    margin-bottom: 2px;
+    font-weight: 550;
+}
+.container{
+    margin-left: 13vw;
+    display: flex;
+    height: 120px;
+    width: 70vw;
+    border: 1px solid black;
+    box-shadow: 7px 8px 6px #3d4d58;
+    border-radius: 12px;
+    background-color: #262424;
+    position: relative;
+}
+
+.signup{
+    border: 1px solid black;
+    height: auto;
+    width: 111px;
+    margin: 0px;
+    border-radius: 12px;
+    background-color: #D6efff;
+}
+.si{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.UserName{
+    height: 5px;
+    width: 67px;
+    border: 0.3px solid #262424;
+    box-shadow: 1px 2px 5px #99bbd0;
+    border-radius: 5px;
+    position: absolute;
+    top: 40vh;
+    left: 3vw;
+    font-size: 4px;
+    z-index: 1;
+}
+.UserName:hover{
+    scale: 1.1;
+}
+input{
+    outline: 0px;
+    padding-left: 3px;
+    background-color: #D6efff;
+}
+.un{
+    font-size: 6px;
+    margin-left: 16px;
+    margin-top: 4px;
+}
+.em{
+    position: relative;
+    top: 5px;
+}
+.email{
+    position: absolute;
+    top: 36vh;
+    left: 16px;
+}
+.uname{
+    position: absolute;
+    top: 23vh;
+    left: 16px;
+}
+.ps{
+    position: relative;
+    top: 11px;
+}
+.password{
+    position: relative;
+    top: -1px;
+    left: 15px;
+}
+.submit{
+    height: 10px;
+    width: 72px;
+    font-size: 6px;
+    padding-bottom: px;
+    background-color: #D6efff;
+    border-radius: 6px;
+    border: 0.3px solid black;
+    box-shadow: 1px 3px 5px  #99bbd0;
+    position: relative;
+    left: 15px;
+    top: -9px;
+    
+}
+.submit:hover{
+    background-color: #262424;
+    color: #D6efff;
+    transition: 0.2s ease-in-out;
+    scale:1.2;
+}
+.hello{
+    color:#D6efff;
+}
+.welcome{
+    font-size: 15px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+.loginLine{
+    font-size: 6px;
+    position: relative;
+    top: 16px;
+    left: 11px;
+}
+.login{
+    color: #D6efff;
+    height: 10px;
+    width: 20px;
+    font-size: 6px;
+    background-color:  #262424;
+    border: 0.3px solid #D6efff;
+    border-radius: 6px;
+    position: relative;
+    top: 65px;
+    right: 34px;
+}
+.login:hover{
+    background-color: #D6efff;
+    color:#262424;
+    transition: 0.2s ease-in-out;
+    scale:1.2;
+}
+.toggle-password{
+    position: absolute;
+    top: 75px;
+    left: 80px;
+    z-index: 1;
+}
