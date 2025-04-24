@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Know Your Job</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+    
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="webname">Know Your Job</div>
+  <div class="container">
+    <div class="signup">
+      <div class="welcome">Welcome Back !!</div>
+      <span class="loginLine"></span>
+    </div>
+
+    <div class="hello">
+      <form onsubmit="return validateForm()" autocomplete="off" action="homepageStudent.html">
+        <div class="si">Log in</div>
+
+        <div class="un">User Name</div>
+        <input type="text" class="UserName uname" id="username" required />
+
+        <div class="em un">Email</div>
+        <input type="email" class="UserName email" id="email" required />
+
+        <div class="ps un">Password</div>
+        <div class="password-container">
+          <input type="password" class="UserName password" id="password" required />
+          
+        </div>
+
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      const username = document.getElementById("username").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (!username || !email || !password) {
+        alert("All fields are required.");
+        return false;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      return true;
+    }
+
+    
+  </script>
+  <script src="name.js"></script>
+</body>
+</html>

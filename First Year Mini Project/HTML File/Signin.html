@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Know Your Job</title>
+  <link rel="stylesheet" href="Signin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-oBWX1wDTVgN9fvE0GpZk2tZ2KHq+yG9uZIGoUoP8KyPC8HO6wvYi2q7gY9JMuAwkWgxYH2ZcXzS2h5eH3kDvhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="webname">Know Your Job</div>
+  <div class="container">
+
+    <div class="signup">
+      <div class="si">Sign up</div>
+      <div class="socialmedia">
+        <span class="facebook"></span>
+        <span class="linkedin"></span>
+        <span class="insta"></span>
+      </div>
+
+      <form id="signupForm" autocomplete="off" action="homepageStudent.html">
+        <div class="un">User Name</div>
+        <div><input type="text" class="UserName uname" name="username" required></div>
+
+        <div class="em un">Email</div>
+        <div><input type="email" class="UserName email" name="email" required></div>
+
+        <div class="ps un">Password</div>
+        <div class="password-container">
+          <input type="password" class="UserName password" name="password" required minlength="6" />
+         
+          </button>
+        </div>
+
+       <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="hello">
+      <div class="welcome">Welcome !!</div>
+      <span class="loginLine">Already have an account ?</span>
+    </div>
+
+    <a href="login.html"><button class="login">Login</button></a>
+  </div>
+
+  <script>
+    
+
+    // Form validation
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+      const email = document.querySelector(".email").value;
+      const password = passwordInput.value;
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email.");
+        event.preventDefault();
+        return;
+      }
+
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        event.preventDefault();
+        return;
+      }
+
+      // Simulated redirect
+      window.location.href = "homepageStudent.html";
+      event.preventDefault();
+    });
+  </script>
+  <script src="name.js"></script>
+</body>
+</html>
